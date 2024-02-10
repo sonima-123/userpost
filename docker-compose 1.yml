@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  app:
+    image: application
+    restart: always
+    expose:
+      - "8081"
+networks:
+  default:
+    external:
+      name: myapp
